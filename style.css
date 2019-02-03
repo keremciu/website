@@ -1,5 +1,6 @@
 body {
   line-height: 2;
+  font-size: 18px;
 }
 
 header {
@@ -22,15 +23,6 @@ nav ul {
   padding: 0;
 }
 
-.content p {
-  margin: 0;
-}
-
-p.lead {
-  color: #6d6d6d;
-  font-size: 300;
-}
-
 nav ul li {
   display: inline-block;
 }
@@ -39,6 +31,7 @@ nav ul li a {
   padding: 12px 24px;
   color: white;
   background: blue;
+  text-decoration: none;
 }
   
 
@@ -48,7 +41,23 @@ nav ul li a {
   margin: 0 auto;
 }
 
+.content p {
+  margin: 0;
+}
+
+a {
+  color: #ff007d;
+}
+
+p.lead {
+  color: #6d6d6d;
+  font-weigh: 300;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
 .content h3 {
+  font-size: 32px;
   margin-top: 40px; 
 }
 
