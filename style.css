@@ -18,8 +18,17 @@ h2 {
 }
 
 nav ul {
-  margin: 20px 0 0;
+  margin: 24px 0 0;
   padding: 0;
+}
+
+.content p {
+  margin: 0;
+}
+
+p.lead {
+  color: #6d6d6d;
+  font-size: 300;
 }
 
 nav ul li {
@@ -27,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 4px 20px;
+  padding: 12px 24px;
   color: white;
   background: blue;
 }
