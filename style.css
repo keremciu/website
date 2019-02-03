@@ -21,19 +21,31 @@ h2 {
 nav ul {
   margin: 24px 0 0;
   padding: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 nav ul li {
-  display: inline-block;
+  display: block;
+  float: left;
 }
 
 nav ul li a {
-  padding: 12px 24px;
+  display: block;
+  padding: 4px 24px;
   color: white;
   background: blue;
   text-decoration: none;
 }
-  
+
+nav ul li a:hover {
+  background: #ff007d;
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+  background: black;
+}
 
 .cover,
 .content {
@@ -47,6 +59,14 @@ nav ul li a {
 
 a {
   color: #ff007d;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active, a:focus {
+  color: black;
 }
 
 p.lead {
