@@ -73,7 +73,6 @@ a:active, a:focus {
 
 p.lead {
   color: #6d6d6d;
-  font-weigh: 300;
   font-size: 22px;
   margin-bottom: 12px;
 }
@@ -88,4 +87,16 @@ p.lead {
   padding: 20px;
   background: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  p.lead {
+    font-size: 20px;
+  }
+  .content p {
+    line-height: 1.5;
+  }
 }
