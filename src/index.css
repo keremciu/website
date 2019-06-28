@@ -1,12 +1,7 @@
-html {
-  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
-}
-
 body {
   margin: 0;
-  font-family: 'Archivo',  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-seri, sans-serif;
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-seri, sans-serif;
   font-size: 1.8rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -14,9 +9,14 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-::-moz-selection { background: #46BFBF; color: white; }
-::selection { background: #46BFBF; color: white; }
+::-moz-selection {
+  background: #46bfbf;
+  color: white;
+}
+::selection {
+  background: #46bfbf;
+  color: white;
+}

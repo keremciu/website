@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 
+import { Container } from 'App/styles';
 import {
   Title,
-  Container,
   Navigation,
   SubText,
   OperationText,
@@ -11,6 +11,7 @@ import {
   LightSwitch,
   SwitchBubble,
   Cloud,
+  MobileSaver,
 } from './styles';
 import Icon from 'App/components/Icon';
 import { useTheme } from 'utils/ThemeContext';
@@ -19,8 +20,10 @@ const Welcome = () => {
   const { toggle, dark } = useTheme();
   return (
     <Fragment>
-      <LightSwitch onClick={() => toggle()}>
-        <SwitchBubble dark={dark}><Cloud dark={dark} /></SwitchBubble>
+      <LightSwitch onClick={() => toggle()} title="oh! time to play with colors?">
+        <SwitchBubble dark={dark}>
+          <Cloud dark={dark} />
+        </SwitchBubble>
       </LightSwitch>
       <Container>
         <Title>
@@ -31,15 +34,25 @@ const Welcome = () => {
           <SubText>KEEP SCROLLING</SubText>
           <OperationText>OR</OperationText>
           <SubText>JUST JUMP TO</SubText>
-          <IconLink href="https://github.com/keremciu/" target="_blank" rel="noopener noreferrer">
-            <Icon type="github" />
-          </IconLink>
-          <IconLink href="https://twitter.com/keremciu/" target="_blank" rel="noopener noreferrer">
-            <Icon type="twitter" />
-          </IconLink>
-          <IconLink href="https://medium.com/@keremciu/" target="_blank" rel="noopener noreferrer">
-            <Icon type="medium" />
-          </IconLink>
+          <MobileSaver>
+            <IconLink href="https://github.com/keremciu/" target="_blank" rel="noopener noreferrer">
+              <Icon type="github" title="my GitHub profile" />
+            </IconLink>
+            <IconLink
+              href="https://twitter.com/keremciu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon type="twitter" title="my Twitter profile" />
+            </IconLink>
+            <IconLink
+              href="https://medium.com/@keremciu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon type="medium" title="my Medium profile" />
+            </IconLink>
+          </MobileSaver>
         </Navigation>
       </Container>
       <IconWrapper>

@@ -13,10 +13,24 @@ const Man = styled.div`
   position: absolute;
   top: -20rem;
   right: 15rem;
+  @media (max-width: 768px) {
+    left: 50%;
+    top: -12rem;
+    margin-left: -8rem;
+    svg {
+      width: 16rem !important;
+    }
+  }
+  @media (max-width: 670px) {
+    margin-left: -6.8rem;
+  }
+  @media (max-width: 375px) {
+    margin-left: -4.5rem;
+  }
 `;
 
 const RepositoryTable = styled.div`
-  color: red;
+  background: lightgray;
 `;
 
 export { Wrapper, Man, RepositoryTable };

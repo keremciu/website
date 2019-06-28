@@ -10,13 +10,17 @@ const AppContainer = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
+  @media (max-width: 1024px) {
+    padding: 0rem 1rem;
+  }
 `;
 
 const Flex = styled.div`
   padding-top: 6rem;
   display: flex;
+  justify-content: space-between;
 `;
 
 const IconWrapper = styled.div`
