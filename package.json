@@ -13,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,7 +32,9 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "http://keremciu.github.io/keremciu.github.io",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "1.18.1"
   }
 }
