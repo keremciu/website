@@ -33,25 +33,27 @@ const Biography = () => {
               >
                 refugee
               </a>{' '}
-              in the world. I’m always into sharing what I've to build a connection between people.
+              in the world. I believe if we share what we have/know then we can destroy the walls
+              between people that's why I'm always into sharing.
             </p>
             <p>
-              My curiosity led me to the world of games and development when I was a child. I'm a
-              self-taught developer who has a designer spirit inside. I studied Visual Communication
-              Design as my bachelor's degree to understand what’s best for me “Design” or
-              “Development”.
+              My curiosity led me to the world of games and development when I was a child. This
+              world dragged me to be a self-taught developer who has a designer spirit inside. I
+              decided to see what's best for me "Design" or "Development" that's why I studied
+              Visual Communication Design as my bachelor's degree.
             </p>
             <p>
-              My passion for finding solutions to complex problems and automating repetitive tasks
-              told me "man! you should be a developer." I don't have a CS background that's why I'm
-              trying to learn fundamentals to improve my communication with my teammates.
+              My passion for finding solutions to complex problems and automating most of the
+              repetitive tasks I had told me "man! you should be a developer." I don't have a CS
+              background but I'm trying to learn fundamentals to improve my communication skills
+              with my teammates.
             </p>
             <p>
               Nowadays I'm trying to call by myself as React Enthusiast and Evangelist of Design
               Standards in the professional world. In my whole career, I built many bridges between
-              teams. I believe I'm a good observer who identifies the communication problems between
-              people/teams. I believe if we build nice helpers/structures then working together will
-              be like playing with Legos.
+              front-end and design. I'm a good observer about identifying the communication problems
+              between people/teams. I believe if we build nice helpers/structures then working
+              together will be like playing with Legos.
             </p>
             <p>
               <a rel="license noopener noreferrer" href="http://kerem.ws/cv" target="_blank">
