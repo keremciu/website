@@ -136,7 +136,9 @@ const Cloud = styled.div`
 const IconLink = styled.a`
   transition: 0.4s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
   color: ${props => props.theme.text};
+  display: inline-block;
   padding: 1.4rem;
+  margin-right: 1rem;
   height: 3rem;
   width: 3rem;
   display: inline-block;
@@ -162,6 +164,13 @@ const IconWrapper = styled.div`
   }
   @media (max-width: 670px) {
     top: 14rem;
+    right: 0;
+    svg {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 370px) {
+    top: 19rem;
     right: 0;
     svg {
       width: 100% !important;
