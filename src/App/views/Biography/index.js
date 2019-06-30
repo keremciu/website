@@ -33,10 +33,10 @@ const Biography = () => {
               >
                 refugee
               </a>{' '}
-              in the world. I’m always into sharing what I’ve to build connection between people.
+              in the world. I’m always into sharing what I've to build a connection between people.
             </p>
             <p>
-              My curiosity led me to the world of games and development when I was child. I'm a
+              My curiosity led me to the world of games and development when I was a child. I'm a
               self-taught developer who has a designer spirit inside. I studied Visual Communication
               Design as my bachelor's degree to understand what’s best for me “Design” or
               “Development”.
@@ -44,14 +44,14 @@ const Biography = () => {
             <p>
               My love for finding solutions to complex problems and automating repetitive tasks told
               me "man! you should be a developer." I don't have a CS background that's why I'm
-              trying to learn fundamentals to improve my communication with my team mates.
+              trying to learn fundamentals to improve my communication with my teammates.
             </p>
             <p>
               Nowadays I'm trying to call by myself as React Enthusiast and Evangelist of Design
-              Standarts in the professional world. In my whole career I built many bridges between
+              Standards in the professional world. In my whole career, I built many bridges between
               teams. I believe I'm a good observer who identifies the communication problems between
               people/teams. I believe if we build nice helpers/structures then working together will
-              be like playing with legos.
+              be like playing with Legos.
             </p>
             <p>
               <a rel="license noopener noreferrer" href="http://kerem.ws/cv" target="_blank">
@@ -59,7 +59,7 @@ const Biography = () => {
               </a>
             </p>
             <p>
-              On social side, I feel myself as a mixture of an artist and developer, you can find me
+              On the social side, I feel like a mixture of an artist and developer, you can find me
               trying to be a spiritual guy on a table full of rational people.
             </p>
             <p>
@@ -68,7 +68,7 @@ const Biography = () => {
                 href="https://www.instagram.com/keremciu/"
                 target="_blank"
               >
-                As a person? You can stalk my instagram here.
+                As a person? You can stalk my Instagram here.
               </a>
             </p>
           </TextColumns>
