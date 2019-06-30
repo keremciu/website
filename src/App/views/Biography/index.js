@@ -42,8 +42,8 @@ const Biography = () => {
               “Development”.
             </p>
             <p>
-              My love for finding solutions to complex problems and automating repetitive tasks told
-              me "man! you should be a developer." I don't have a CS background that's why I'm
+              My passion for finding solutions to complex problems and automating repetitive tasks
+              told me "man! you should be a developer." I don't have a CS background that's why I'm
               trying to learn fundamentals to improve my communication with my teammates.
             </p>
             <p>
