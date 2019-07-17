@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/keremciu.github.io/static/css/main.520cb6a5.chunk.css",
-    "main.js": "/keremciu.github.io/static/js/main.18e16f4f.chunk.js",
-    "main.js.map": "/keremciu.github.io/static/js/main.18e16f4f.chunk.js.map",
-    "runtime~main.js": "/keremciu.github.io/static/js/runtime~main.dbf96c4c.js",
-    "runtime~main.js.map": "/keremciu.github.io/static/js/runtime~main.dbf96c4c.js.map",
-    "static/js/2.c60a493a.chunk.js": "/keremciu.github.io/static/js/2.c60a493a.chunk.js",
-    "static/js/2.c60a493a.chunk.js.map": "/keremciu.github.io/static/js/2.c60a493a.chunk.js.map",
-    "index.html": "/keremciu.github.io/index.html",
-    "precache-manifest.f62990fefb1534d94a15377c05a5b570.js": "/keremciu.github.io/precache-manifest.f62990fefb1534d94a15377c05a5b570.js",
-    "service-worker.js": "/keremciu.github.io/service-worker.js",
-    "static/css/main.520cb6a5.chunk.css.map": "/keremciu.github.io/static/css/main.520cb6a5.chunk.css.map"
+    "main.css": "/static/css/main.520cb6a5.chunk.css",
+    "main.js": "/static/js/main.98833a23.chunk.js",
+    "main.js.map": "/static/js/main.98833a23.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.5c4929e8.chunk.js": "/static/js/2.5c4929e8.chunk.js",
+    "static/js/2.5c4929e8.chunk.js.map": "/static/js/2.5c4929e8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.eb73d9056d2e3b5d5ce628ca5282b269.js": "/precache-manifest.eb73d9056d2e3b5d5ce628ca5282b269.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.520cb6a5.chunk.css.map": "/static/css/main.520cb6a5.chunk.css.map"
   }
 }
