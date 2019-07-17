@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 const TextColumns = styled.div`
-  text-align: justify;
+  text-align: left;
   column-width: 50%;
   -webkit-column-gap: calc(24px + 4%);
   column-gap: calc(24px + 4%);

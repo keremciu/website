@@ -32,7 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://keremciu.github.io/keremciu.github.io",
+  "homepage": "http://kerem.ws",
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "prettier": "1.18.1"
