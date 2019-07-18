@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
   }
   a, a:focus, a:active {
     color: ${props => props.theme.link};
-    transition: 0.6s color;
   }
 `;
 

@@ -6,7 +6,7 @@ import { Wrapper } from './styles';
 const Notes = () => (
   <Wrapper>
     <Container>
-      <Flex>
+      <Flex style={{ paddingTop: '1rem' }}>
         <p>
           © 2019 Kerem Sevencan. Made in Berlin with{' '}
           <span role="img" aria-label="heart">

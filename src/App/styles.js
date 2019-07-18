@@ -31,12 +31,15 @@ const IconWrapper = styled.div`
 
 const SectionTitle = styled.h2`
   padding-top: 10rem;
+  margin-bottom: 0;
   font-size: 3rem;
   letter-spacing: -0.009em;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 `;
 
 const SectionLead = styled.p`
+  margin-top: 0;
+  padding-bottom: 1rem;
   color: #828282;
   font-size: 1.3rem;
   font-weight: 600;

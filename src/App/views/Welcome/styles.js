@@ -35,9 +35,8 @@ const Button = styled.button`
 `;
 
 const OperationText = styled.div`
-  font-size: 1rem;
-  padding-top: 0.25rem;
-  color: #9fa0a1;
+  color: #b3b9bf;
+  letter-spacing: 0.1rem;
 `;
 
 const SubText = styled.div`
@@ -56,6 +55,7 @@ const Navigation = styled.div`
   letter-spacing: 0.2rem;
   font-size: 1.4rem;
   opacity: 0;
+  transform: translateZ(0);
   animation: ${fadeInDown} 0.78s cubic-bezier(0.215, 0.61, 0.355, 1) 0.28s forwards;
   @media (max-width: 768px) {
     width: 100%;
