@@ -56,7 +56,7 @@ const Biography = () => {
               together will be like playing with Legos.
             </p>
             <p>
-              <a rel="license noopener noreferrer" href="http://kerem.ws/cv" target="_blank">
+              <a rel="license noopener noreferrer" href="https://keremciu.github.io/cv" target="_blank">
                 My career? You can grab my cv here.
               </a>
             </p>
