@@ -8,8 +8,8 @@ export default function Intro() {
       <section>
         <div className="avatar">
           <Image
-            width={144}
-            height={130}
+            width={190}
+            height={170}
             src="/avatar.png"
             alt="Drawing of Kerem Sevencan"
           />
@@ -43,8 +43,19 @@ export default function Intro() {
       <style jsx>{`
         .avatar {
           display: block;
-          width: 9em;
           margin-bottom: 2rem;
+        }
+        .avatar img {
+          animation-name: example;
+          animation-duration: 10s;
+        }
+        @keyframes example {
+          from {
+            filter: blur(5px) brightness(3);
+          }
+          to {
+            filter: blur(0px) brightness(1);
+          }
         }
         .name-vector {
           position: absolute;

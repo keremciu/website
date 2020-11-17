@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Intro from "../components/intro";
 import Bio from "../components/bio";
+import Hero from "../components/hero";
 
 export default function Home() {
   function switchTheme() {
@@ -31,6 +32,19 @@ export default function Home() {
       <Intro />
       <Bio />
       <div>
+        <Hero
+          label="OPEN SOURCE CONTRIBUTOR"
+          title="softography"
+          description={
+            <span>
+              a creation must follow its own path without the help of the
+              creator.
+              <br />
+              making something that can help people is amazing.
+            </span>
+          }
+        />
+
         <div className="grid">
           <a
             href="https://github.com/keremciu/sketch-iconfont"
