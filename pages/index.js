@@ -1,132 +1,117 @@
-import Head from 'next/head'
+import Head from "next/head";
+
+import Intro from "../components/intro";
+import Bio from "../components/bio";
 
 export default function Home() {
+  function switchTheme() {
+    const currentTheme = document.documentElement.dataset.theme;
+
+    if (currentTheme === "dark") {
+      document.documentElement.dataset.theme = "light";
+    } else {
+      document.documentElement.dataset.theme = "dark";
+    }
+  }
+
   return (
-    <div className="container">
+    <main>
       <Head>
-        <title>Create Next App</title>
+        <title>Kerem Sevencan | Digital Experience Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Inter:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
+      <div>
+        <button onClick={switchTheme}>Switch Theme</button>
+      </div>
+      <Intro />
+      <Bio />
+      <div>
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://github.com/keremciu/sketch-iconfont"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
+            <h3>sketch-iconfont &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              This plugin helps you easily insert and manage icons from icon
+              fonts.
+            </p>
+          </a>
+
+          <a
+            href="https://github.com/keremciu/fifa-tournament-generator"
+            className="card"
+          >
+            <h3>fifa-tournament-generator &rarr;</h3>
+            <p>
+              Web application to create and share fifa tournaments with your
+              friends.
+            </p>
+          </a>
+
+          <a href="https://github.com/keremciu/font-bundles" className="card">
+            <h3>font-bundles &rarr;</h3>
+            <p>Main font-bundle for sketch icon-font plugin.</p>
+          </a>
+
+          <a href="https://github.com/keremciu/sketch-repeat" className="card">
+            <h3>sketch-repeat &rarr;</h3>
+            <p>
+              This plugin helps you easily duplicate your objects to all
+              Artboards.
             </p>
           </a>
         </div>
-      </main>
+      </div>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        <p className="cvlink">
+          Interested as a colleague?{" "}
+          <a
+            rel="license noopener noreferrer"
+            href="https://keremciu.github.io/cv"
+            target="_blank"
+          >
+            you can get my CV here.
+          </a>
+        </p>
+        <p>© 2020 Kerem Sevencan. made in Berlin with love.</p>
+        <div style={{ fontSize: 24 }}>🦁</div>
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         footer {
+          margin: 0 auto;
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-size: 0.625rem;
+          font-weight: 400;
+          padding-bottom: 2rem;
         }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .cvlink {
+          font-size: 0.75rem;
         }
 
         a {
           color: inherit;
+          font-weight: 500;
+          transition: all 0.25s ease-in;
+        }
+        a:hover {
+          color: var(--heading-color);
+          border-bottom: 1px solid;
+          border-bottom-color: var(--heading-color);
+          padding-bottom: 4px;
           text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
         }
 
         code {
@@ -178,10 +163,6 @@ export default function Home() {
           line-height: 1.5;
         }
 
-        .logo {
-          height: 1em;
-        }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -191,19 +172,95 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
+        :root {
+          --bg-color: #ebebe5;
+          --secondary-bg-color: white;
+          --heading-color: black;
+          --primary-color: #62625c;
+          --secondary-color: #808080;
+          --text-bg-color: #f7faf6;
+          --secondary-text-bg-color: #f2f6f1;
+          --yellow-color: #ebe0a0;
+        }
+
+        [data-theme="dark"] {
+          --bg-color: #13110b;
+          --secondary-bg-color: black;
+          --heading-color: #b8b8b6;
+          --primary-color: #6e6e6d;
+          --secondary-color: #5c5c5b;
+          --text-bg-color: #13110b;
+          --secondary-text-bg-color: #110f0a;
+          --yellow-color: #292513;
+        }
+
+        body {
+          background: var(--bg-color);
+          transition: background 0.5s;
+          color: var(--primary-color);
+        }
+
+        .container {
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+        }
+
+        [data-style="secondary"] {
+          background: var(--secondary-bg-color);
+        }
+
+        [data-style="secondary"] .label {
+          background: var(--bg-color);
+        }
+
+        h1 {
+          color: var(--heading-color);
+        }
+
+        section {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 800px;
+          padding: 8rem 0 4rem;
+        }
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .column {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          flex: 1;
+        }
+
         html,
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
+          font-weight: 400;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        @media (max-width: 767px) {
+          html {
+            font-size: 65%;
+          }
         }
 
         * {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
+    </main>
+  );
 }

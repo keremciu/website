@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# keremciu.github.io
+
+This is my personal website. It's bootstrapped with [Next.js](https://nextjs.org/).
+
+#
