@@ -8,7 +8,7 @@ export default function Intro() {
           <img
             alt="Drawing of Kerem Sevencan"
             src="/avatar_640.webp"
-            srcset="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
+            srcSet="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
           />
         </div>
         <Hero
@@ -64,6 +64,7 @@ export default function Intro() {
           width: 140px;
           height: 60px;
           fill: var(--yellow-color);
+          opacity: 0.5;
         }
         @media (max-width: 767px) {
           .name-vector {

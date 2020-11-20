@@ -1,4 +1,15 @@
+import { useEffect } from "react";
+
 export default function Switch() {
+  useEffect(function onFirstMount() {
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    if (prefersDarkScheme.matches) {
+      document.documentElement.dataset.theme = "dark";
+    } else {
+      document.documentElement.dataset.theme = "light";
+    }
+  }, []);
+
   function switchTheme() {
     const currentTheme = document.documentElement.dataset.theme;
 
@@ -51,6 +62,7 @@ export default function Switch() {
               padding: 1rem;
               position: relative;
               display: inline-block;
+              transition: transform 0.3s;
 
               /* To make outline on mobile invisible */
               -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -65,11 +77,14 @@ export default function Switch() {
               background-repeat: no-repeat;
               position: relative;
               will-change: background;
-              transition: all 400ms ease;
+              transition: all 0.3s ease-in;
 
               /* Safari transition issue */
               backface-visibility: hidden;
               transform: translate3d(0, 0, 0);
+            }
+            label:hover {
+              transform: scale(1.15);
             }
             .planet::after {
               content: "";

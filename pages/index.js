@@ -46,7 +46,6 @@ export default function Home() {
             className="textlink"
             rel="license noopener noreferrer"
             href="https://keremciu.github.io/cv"
-            target="_blank"
           >
             you can get my CV here
           </a>
@@ -56,7 +55,6 @@ export default function Home() {
           <a
             rel="license noopener noreferrer"
             href="https://github.com/keremciu/"
-            target="_blank"
           >
             <svg
               width="36"
@@ -71,7 +69,6 @@ export default function Home() {
           <a
             rel="license noopener noreferrer"
             href="https://twitter.com/keremciu/"
-            target="_blank"
           >
             <svg
               width="36"
@@ -86,7 +83,6 @@ export default function Home() {
           <a
             rel="license noopener noreferrer"
             href="https://instagram.com/keremciu/"
-            target="_blank"
           >
             <svg
               width="36"
@@ -101,7 +97,6 @@ export default function Home() {
           <a
             rel="license noopener noreferrer"
             href="https://dribbble.com/keremciu/"
-            target="_blank"
           >
             <svg
               width="36"
@@ -116,7 +111,6 @@ export default function Home() {
           <a
             rel="license noopener noreferrer"
             href="https://www.linkedin.com/in/keremsevencan/"
-            target="_blank"
           >
             <svg
               width="36"
@@ -206,8 +200,8 @@ export default function Home() {
           --secondary-color: #808080;
           --text-bg-color: #f7faf6;
           --secondary-text-bg-color: #f2f6f1;
-          --yellow-color: #ebe0a0;
-          --bg-planet-bright: #e7ce42;
+          --yellow-color: #ebd55b;
+          --bg-planet-bright: #ebd55b;
           --bg-planet-shadow: #828894;
           --bg-planet-lightshadow: #8d939d;
         }
@@ -226,7 +220,7 @@ export default function Home() {
 
         body {
           background: var(--bg-color);
-          transition: background 0.5s;
+          transition: background 0.3s;
           color: var(--primary-color);
         }
 
