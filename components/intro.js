@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Hero from "./hero";
 
 export default function Intro() {
@@ -7,11 +5,10 @@ export default function Intro() {
     <div className="container">
       <section>
         <div className="avatar">
-          <Image
-            width={190}
-            height={170}
-            src="/avatar.png"
+          <img
             alt="Drawing of Kerem Sevencan"
+            src="/avatar_640.webp"
+            srcset="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
           />
         </div>
         <Hero
@@ -47,11 +44,11 @@ export default function Intro() {
         }
         .avatar img {
           animation-name: example;
-          animation-duration: 10s;
+          animation-duration: 0.5s;
         }
         @keyframes example {
           from {
-            filter: blur(5px) brightness(3);
+            filter: blur(3px) brightness(1.2);
           }
           to {
             filter: blur(0px) brightness(1);
