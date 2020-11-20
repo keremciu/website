@@ -2,7 +2,7 @@ import Hero from "./hero";
 
 export default function Bio() {
   return (
-    <div data-style="secondary">
+    <div data-style="secondary" className="wrapper">
       <div className="container">
         <section>
           <Hero
@@ -72,7 +72,6 @@ export default function Bio() {
           margin: 0 -2rem;
           background: var(--text-bg-color);
           border-radius: 1rem;
-          line-height: 150%;
           color: var(--heading-color);
         }
         .column {
@@ -84,6 +83,12 @@ export default function Bio() {
           border-top-right-radius: 1rem;
           border-bottom-right-radius: 1rem;
           background: var(--secondary-text-bg-color);
+        }
+        @media (max-width: 1024px) {
+          .row {
+            margin-left: 0px;
+            flex-direction: column;
+          }
         }
       `}</style>
     </div>

@@ -71,8 +71,13 @@ export default function Intro() {
         @media (max-width: 767px) {
           .name-vector {
             width: 90px;
-            top: -20px;
+            top: -16px;
             left: 100px;
+          }
+        }
+        @media (max-width: 1024px) {
+          .avatar {
+            margin-left: 20px;
           }
         }
       `}</style>

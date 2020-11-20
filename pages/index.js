@@ -1,20 +1,12 @@
 import Head from "next/head";
 
+import Switch from "../components/switch";
 import Intro from "../components/intro";
 import Bio from "../components/bio";
 import Hero from "../components/hero";
+import Projects from "../components/projects";
 
 export default function Home() {
-  function switchTheme() {
-    const currentTheme = document.documentElement.dataset.theme;
-
-    if (currentTheme === "dark") {
-      document.documentElement.dataset.theme = "light";
-    } else {
-      document.documentElement.dataset.theme = "dark";
-    }
-  }
-
   return (
     <main>
       <Head>
@@ -26,61 +18,25 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div>
-        <button onClick={switchTheme}>Switch Theme</button>
-      </div>
+      <Switch />
       <Intro />
       <Bio />
       <div>
-        <Hero
-          label="OPEN SOURCE CONTRIBUTOR"
-          title="softography"
-          description={
-            <span>
-              a creation must follow its own path without the help of the
-              creator.
-              <br />
-              making something that can help people is amazing.
-            </span>
-          }
-        />
-
-        <div className="grid">
-          <a
-            href="https://github.com/keremciu/sketch-iconfont"
-            className="card"
-          >
-            <h3>sketch-iconfont &rarr;</h3>
-            <p>
-              This plugin helps you easily insert and manage icons from icon
-              fonts.
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/keremciu/fifa-tournament-generator"
-            className="card"
-          >
-            <h3>fifa-tournament-generator &rarr;</h3>
-            <p>
-              Web application to create and share fifa tournaments with your
-              friends.
-            </p>
-          </a>
-
-          <a href="https://github.com/keremciu/font-bundles" className="card">
-            <h3>font-bundles &rarr;</h3>
-            <p>Main font-bundle for sketch icon-font plugin.</p>
-          </a>
-
-          <a href="https://github.com/keremciu/sketch-repeat" className="card">
-            <h3>sketch-repeat &rarr;</h3>
-            <p>
-              This plugin helps you easily duplicate your objects to all
-              Artboards.
-            </p>
-          </a>
-        </div>
+        <section>
+          <Hero
+            label="OPEN SOURCE CONTRIBUTOR"
+            title="softography"
+            description={
+              <span>
+                a creation must follow its own path without the help of the
+                creator.
+                <br />
+                making something that can help people is amazing.
+              </span>
+            }
+          />
+          <Projects />
+        </section>
       </div>
 
       <footer>
@@ -92,8 +48,9 @@ export default function Home() {
             href="https://keremciu.github.io/cv"
             target="_blank"
           >
-            you can get my CV here.
+            you can get my CV here
           </a>
+          .
         </p>
         <div className="socials">
           <a
@@ -197,12 +154,18 @@ export default function Home() {
           color: inherit;
           font-weight: 500;
           transition: all 0.2s ease-in;
+          transition: background-position 80ms ease-out 0s;
+          background-image: linear-gradient(
+            transparent 0px,
+            var(--yellow-color) 0px
+          );
+          background-position: 0px 12px;
+          background-repeat: no-repeat;
+          text-decoration: none;
         }
         .textlink:hover {
           color: var(--heading-color);
-          border-bottom: 1px solid;
-          border-bottom-color: var(--heading-color);
-          text-decoration: none;
+          background-position: 0px 0px;
         }
 
         .socials {
@@ -213,9 +176,15 @@ export default function Home() {
           padding: 1rem 0;
         }
 
+        .socials a svg {
+          opacity: 0.8;
+          transform-origin: center center;
+          transition: all 0.2s ease-out;
+        }
+
         .socials a:hover svg {
-          transition: fill 0.5s;
-          fill: var(--primary-color);
+          opacity: 1;
+          transform: scale(1.15);
         }
 
         code {
@@ -225,42 +194,6 @@ export default function Home() {
           font-size: 1.1rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
         }
       `}</style>
 
@@ -274,9 +207,13 @@ export default function Home() {
           --text-bg-color: #f7faf6;
           --secondary-text-bg-color: #f2f6f1;
           --yellow-color: #ebe0a0;
+          --bg-planet-bright: #e7ce42;
+          --bg-planet-shadow: #828894;
+          --bg-planet-lightshadow: #8d939d;
         }
 
         [data-theme="dark"] {
+          --bg-planet-bright: #d7d7d8;
           --bg-color: #13110b;
           --secondary-bg-color: black;
           --heading-color: #b8b8b6;
@@ -299,12 +236,23 @@ export default function Home() {
           flex-direction: column;
         }
 
-        [data-style="secondary"] {
+        [data-style="secondary"].wrapper {
           background: var(--secondary-bg-color);
         }
 
         [data-style="secondary"] .label {
           background: var(--bg-color);
+        }
+
+        .label {
+          line-height: 1;
+          border-radius: 1rem;
+          padding: 4px 10px;
+          font-size: 0.625rem;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          background: var(--secondary-bg-color);
+          color: var(--secondary-color);
         }
 
         h1 {
@@ -314,7 +262,7 @@ export default function Home() {
         section {
           margin: 0 auto;
           width: 100%;
-          max-width: 800px;
+          max-width: 960px;
           padding: 8rem 0 4rem;
         }
 
@@ -340,8 +288,20 @@ export default function Home() {
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
           font-weight: 400;
+          line-height: 1.5715;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-weight: normal;
+          font-family: "IBM Plex Serif", "New York Medium",
+            -apple-system-ui-serif, ui-serif, serif;
         }
 
         @media (max-width: 767px) {
