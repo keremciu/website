@@ -1,4 +1,6 @@
 import Hero from "./hero";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 export default function Bio() {
   return (
@@ -31,9 +33,43 @@ export default function Bio() {
               </p>
               <p>
                 When I was little, my curiosity took me to the game universe. I
-                played games then <strong>changed</strong> what I played. This
-                universe has driven me to become a self-taught developer who has
-                a design spirit inside. I shared what I learn on my way.
+                played games then{" "}
+                <Tippy
+                  content={
+                    <div className="tooltipcontent">
+                      <p>
+                        my first digital creations were game patches for a
+                        soccer game called FIFA. You can see one of them{" "}
+                        <a
+                          target="_blank"
+                          rel="license noopener noreferrer"
+                          href="https://soccercenter.net/dosyalar/fifa-07-08-edition_1385"
+                        >
+                          here
+                        </a>{" "}
+                        from 2007.
+                      </p>
+                      <p>
+                        I created a website to share my knowledge about game
+                        patches, this was my first website. You can see it{" "}
+                        <a
+                          target="_blank"
+                          rel="license noopener noreferrer"
+                          href="https://keremciu.github.io/first-website/"
+                        >
+                          here
+                        </a>{" "}
+                        🤦‍♂️
+                      </p>
+                    </div>
+                  }
+                  interactive
+                >
+                  <strong className="tooltiptrigger">changed</strong>
+                </Tippy>{" "}
+                what I played. This universe has driven me to become a
+                self-taught developer who has a design spirit inside. I shared
+                what I learn on my way.
               </p>
               <p>
                 Thanks to the internet and freelance web projects, I started
@@ -46,10 +82,29 @@ export default function Bio() {
                 On the professional side, I'm trying to call myself a React
                 enthusiast and an evangelist of Design Standards.
               </p>
-              <p>
-                Throughout my entire career, I've built many bridges between
-                frontend and design. I am a good observer when it comes to
-                identifying communication issues between people / tools.
+              <p style={{ width: "101%" }}>
+                Throughout my entire career, I've built many{" "}
+                <Tippy
+                  content={
+                    <div className="tooltipcontent">
+                      <p>
+                        I was lucky to work on projects related to both frontend
+                        and design. You can find many plugins/scripts on my
+                        GitHub.
+                      </p>
+                      <p>
+                        My passion comes from communication. I love talking and
+                        underlying how we'd like to work together then it's easy
+                        to create some useful tools to save time!
+                      </p>
+                    </div>
+                  }
+                  interactive
+                >
+                  <strong className="tooltiptrigger">bridges</strong>
+                </Tippy>{" "}
+                between frontend and design. I am a good observer when it comes
+                to identifying communication issues between people / tools.
               </p>
               <p>
                 I believe working together will be like playing with Legos if we
@@ -68,11 +123,27 @@ export default function Bio() {
         .textwrapper {
           margin: 0 auto 4rem;
         }
+        .tooltipcontent {
+          padding: 0px 12px;
+        }
         .longtext {
           margin: 0 -2rem;
           background: var(--text-bg-color);
           border-radius: 1rem;
           color: var(--heading-color);
+        }
+        .longtext a {
+          color: white;
+        }
+        .longtext a:hover {
+          text-decoration: none;
+        }
+        .longtext .tooltiptrigger {
+          font-weight: 600;
+          border-bottom: 1px solid var(--heading-color);
+        }
+        .longtext .tooltiptrigger:hover {
+          border-bottom: 1px solid transparent;
         }
         .column {
           min-height: 100px;

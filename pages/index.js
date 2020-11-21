@@ -40,7 +40,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Inter:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -172,25 +172,7 @@ export default function Home() {
           padding-bottom: 2rem;
         }
         .cvlink {
-          font-size: 0.75rem;
-        }
-
-        .textlink {
-          color: inherit;
-          font-weight: 500;
-          transition: all 0.2s ease-in;
-          transition: background-position 80ms ease-out 0s;
-          background-image: linear-gradient(
-            transparent 0px,
-            var(--yellow-color) 0px
-          );
-          background-position: 0px 12px;
-          background-repeat: no-repeat;
-          text-decoration: none;
-        }
-        .textlink:hover {
-          color: var(--heading-color);
-          background-position: 0px 0px;
+          font-size: 0.85rem;
         }
 
         .socials {
@@ -246,7 +228,7 @@ export default function Home() {
           --secondary-color: #5c5c5b;
           --text-bg-color: #13110b;
           --secondary-text-bg-color: #110f0a;
-          --yellow-color: #292513;
+          --yellow-color: #433806;
         }
 
         body {
@@ -282,6 +264,24 @@ export default function Home() {
 
         h1 {
           color: var(--heading-color);
+        }
+
+        .textlink {
+          color: inherit;
+          font-weight: 500;
+          transition: all 0.2s ease-in;
+          transition: background-position 80ms ease-out 0s;
+          background-image: linear-gradient(
+            transparent 0px,
+            var(--yellow-color) 0px
+          );
+          background-position: 0px 12px;
+          background-repeat: no-repeat;
+          text-decoration: none;
+        }
+        .textlink:hover {
+          color: var(--heading-color);
+          background-position: 0px 0px;
         }
 
         section {
