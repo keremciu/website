@@ -57,8 +57,15 @@
 
 body {
   background: var(--bg-color);
-  transition: background 0.3s;
   color: var(--primary-color);
+}
+
+[data-theme="light"] body {
+  transition: background 0.3s;
+}
+
+[data-theme="dark"] body {
+  transition: background 0.3s;
 }
 
 .container {
