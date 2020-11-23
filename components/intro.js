@@ -9,6 +9,8 @@ export default function Intro() {
             alt="Drawing of Kerem Sevencan"
             src="/avatar_640.webp"
             srcSet="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
+            width={190}
+            height={170}
           />
         </div>
         <Hero

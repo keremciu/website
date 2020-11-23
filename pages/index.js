@@ -1,12 +1,24 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 import Switch from "../components/switch";
-import Intro from "../components/intro";
-import Bio from "../components/bio";
-import Hero from "../components/hero";
-import Projects from "../components/projects";
+
+const Intro = dynamic(() => import("../components/intro"));
+const Bio = dynamic(() => import("../components/bio"));
+const Hero = dynamic(() => import("../components/hero"));
+const Projects = dynamic(() => import("../components/projects"));
 
 export default function Home() {
+  useEffect(function onFirstMount() {
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    if (prefersDarkScheme.matches) {
+      document.documentElement.dataset.theme = "dark";
+    } else {
+      document.documentElement.dataset.theme = "light";
+    }
+  }, []);
+
   return (
     <main>
       <Head>
@@ -47,24 +59,7 @@ export default function Home() {
       <Switch />
       <Intro />
       <Bio />
-      <div>
-        <section>
-          <Hero
-            label="OPEN SOURCE CONTRIBUTOR"
-            title="softography"
-            description={
-              <span>
-                a creation must follow its own path without the help of the
-                creator.
-                <br />
-                making something that can help people is amazing.
-              </span>
-            }
-          />
-          <Projects />
-        </section>
-      </div>
-
+      <Projects />
       <footer>
         <p className="cvlink">
           Interested as a colleague?{" "}

@@ -1,3 +1,5 @@
+import Hero from "./hero";
+
 const projectList = [
   {
     url: "https://github.com/keremciu/sketch-iconfont",
@@ -42,92 +44,105 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <div className="grid" data-style="secondary">
-      {projectList.map((project) => (
-        <a
-          href={project.url}
-          className="card"
-          key={project.name}
-          rel="license noopener noreferrer"
-          target="_blank"
-        >
-          <span className="label">
-            {project.language ? project.language.toUpperCase() : "JAVASCRIPT"}
+    <section>
+      <Hero
+        label="OPEN SOURCE CONTRIBUTOR"
+        title="softography"
+        description={
+          <span>
+            a creation must follow its own path without the help of the creator.
+            <br />
+            making something that can help people is amazing.
           </span>
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
-        </a>
-      ))}
-      <style jsx>
-        {`
-          .grid {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-          }
-
-          .card {
-            background: var(--secondary-bg-color);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-            border-radius: 16px 4px 4px 4px;
-            margin-right: 2%;
-            margin-bottom: 4%;
-            flex-basis: 31%;
-            padding: 1.3rem 1.5rem;
-            text-align: left;
-            color: inherit;
-            text-decoration: none;
-            transition: all 0.2s ease-in;
-            background-image: linear-gradient(
-              transparent 0px,
-              var(--yellow-color) 0px
-            );
-            background-position: 0 150px;
-            background-repeat: no-repeat;
-          }
-
-          .card h3 {
-            color: var(--heading-color);
-            margin: 8px 0 0;
-          }
-
-          .card p {
-            margin: 8px 0 0;
-            font-size: 12px;
-          }
-
-          .card:hover,
-          .card:focus,
-          .card:active {
-            transform: translateY(2px);
-            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-            background-position: 0px 144px;
-          }
-
-          @media (max-width: 1024px) {
+        }
+      />
+      <div className="grid" data-style="secondary">
+        {projectList.map((project) => (
+          <a
+            href={project.url}
+            className="card"
+            key={project.name}
+            rel="license noopener noreferrer"
+            target="_blank"
+          >
+            <span className="label">
+              {project.language ? project.language.toUpperCase() : "JAVASCRIPT"}
+            </span>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+          </a>
+        ))}
+        <style jsx>
+          {`
             .grid {
-              margin-left: 2%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 3rem;
+              margin-bottom: 3rem;
             }
-            .card {
-              flex-basis: 48%;
-            }
-          }
 
-          @media (max-width: 600px) {
-            .grid {
-              width: 90%;
-              flex-direction: column;
-              margin-left: 5%;
-            }
             .card {
-              min-width: 100%;
+              background: var(--secondary-bg-color);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+              border-radius: 16px 4px 4px 4px;
+              margin-right: 2%;
+              margin-bottom: 4%;
+              flex-basis: 31%;
+              padding: 1.3rem 1.5rem;
+              text-align: left;
+              color: inherit;
+              text-decoration: none;
+              transition: all 0.2s ease-in;
+              background-image: linear-gradient(
+                transparent 0px,
+                var(--yellow-color) 0px
+              );
+              background-position: 0 150px;
+              background-repeat: no-repeat;
             }
-          }
-        `}
-      </style>
-    </div>
+
+            .card h3 {
+              color: var(--heading-color);
+              margin: 8px 0 0;
+            }
+
+            .card p {
+              margin: 8px 0 0;
+              font-size: 12px;
+            }
+
+            .card:hover,
+            .card:focus,
+            .card:active {
+              transform: translateY(2px);
+              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+              background-position: 0px 144px;
+            }
+
+            @media (max-width: 1024px) {
+              .grid {
+                margin-left: 2%;
+              }
+              .card {
+                flex-basis: 48%;
+              }
+            }
+
+            @media (max-width: 600px) {
+              .grid {
+                width: 90%;
+                flex-direction: column;
+                margin-left: 5%;
+              }
+              .card {
+                min-width: 100%;
+              }
+            }
+          `}
+        </style>
+      </div>
+    </section>
   );
 }

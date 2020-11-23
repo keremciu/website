@@ -1,15 +1,4 @@
-import { useEffect } from "react";
-
 export default function Switch() {
-  useEffect(function onFirstMount() {
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    if (prefersDarkScheme.matches) {
-      document.documentElement.dataset.theme = "dark";
-    } else {
-      document.documentElement.dataset.theme = "light";
-    }
-  }, []);
-
   function switchTheme() {
     const currentTheme = document.documentElement.dataset.theme;
 
