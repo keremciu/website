@@ -3,25 +3,17 @@ import dynamic from "next/dynamic";
 import { useEffect } from "react";
 
 import Switch from "../components/switch";
+import Intro from "../components/intro";
 
-const Intro = dynamic(() => import("../components/intro"));
 const Bio = dynamic(() => import("../components/bio"));
 const Hero = dynamic(() => import("../components/hero"));
 const Projects = dynamic(() => import("../components/projects"));
 
 export default function Home() {
-  useEffect(function onFirstMount() {
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    if (prefersDarkScheme.matches) {
-      document.documentElement.dataset.theme = "dark";
-    } else {
-      document.documentElement.dataset.theme = "light";
-    }
-  }, []);
-
   return (
     <main>
       <Head>
+        <html lang="en-us" />
         <title>Kerem Sevencan | Digital Experience Developer</title>
         <meta name="author" content="Kerem Sevencan" />
         <meta
@@ -214,11 +206,25 @@ export default function Home() {
           --bg-planet-lightshadow: #8d939d;
         }
 
-        [data-theme="dark"] {
+        @media (prefers-color-scheme: dark) {
+          html:not([data-theme='light']) {
+            --bg-planet-bright: #d7d7d8;
+            --bg-color: #13110b;
+            --secondary-bg-color: black;
+            --heading-color: #b8b8b6;s
+            --primary-color: #6e6e6d;
+            --secondary-color: #5c5c5b;
+            --text-bg-color: #13110b;
+            --secondary-text-bg-color: #110f0a;
+            --yellow-color: #433806;
+          }
+        }
+
+        [data-theme='dark'] {
           --bg-planet-bright: #d7d7d8;
           --bg-color: #13110b;
           --secondary-bg-color: black;
-          --heading-color: #b8b8b6;
+          --heading-color: #b8b8b6;s
           --primary-color: #6e6e6d;
           --secondary-color: #5c5c5b;
           --text-bg-color: #13110b;
