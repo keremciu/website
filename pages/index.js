@@ -127,6 +127,8 @@ export default function Home() {
 
         .socials {
           display: flex;
+          min-height: 70px;
+          height: 70px;
           justify-content: space-between;
           width: 100%;
           max-width: 400px;
