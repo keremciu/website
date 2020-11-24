@@ -5,24 +5,24 @@
 
 @media (prefers-color-scheme: light) {
   html:not([data-theme="dark"]) {
-    --bg-color: #ebebe5;
+    --bg-color: #f0f0eb;
     --secondary-bg-color: white;
     --heading-color: black;
     --primary-color: #62625c;
     --secondary-color: #808080;
-    --secondary-text-bg-color: #e2e2d8;
+    --secondary-text-bg-color: #ebebe5;
     --yellow-color: #ebd55b;
     --bg-planet-bright: #ebd55b;
   }
 }
 
 [data-theme="light"] {
-  --bg-color: #ebebe5;
+  --bg-color: #f0f0eb;
   --secondary-bg-color: white;
   --heading-color: black;
   --primary-color: #62625c;
   --secondary-color: #808080;
-  --secondary-text-bg-color: #e2e2d8;
+  --secondary-text-bg-color: #ebebe5;
   --yellow-color: #ebd55b;
   --bg-planet-bright: #ebd55b;
 }
