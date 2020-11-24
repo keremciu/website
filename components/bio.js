@@ -77,7 +77,7 @@ export default function Bio() {
                 practiced different visual disciplines.
               </p>
             </div>
-            <div className="column secondary">
+            <div className="column second">
               <p>
                 On the professional side, I'm trying to call myself a React
                 enthusiast and an evangelist of Design Standards.
@@ -150,7 +150,7 @@ export default function Bio() {
           max-width: 620px;
           padding: 3rem 4rem;
         }
-        .column.secondary {
+        .column.second {
           border-top-right-radius: 1rem;
           border-bottom-right-radius: 1rem;
           background: var(--secondary-text-bg-color);
