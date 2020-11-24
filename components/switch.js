@@ -110,6 +110,12 @@ export default function Switch() {
               transition: transform 400ms ease, opacity 200ms ease,
                 width 200ms ease, height 200ms ease;
             }
+            @media (max-width: 600px) {
+              .elements svg {
+                width: 5px;
+                height: 5px;
+              }
+            }
             .elements svg circle {
               fill: var(--bg-planet-bright);
               transition: fill 400ms ease;

@@ -60,10 +60,7 @@ body {
   color: var(--primary-color);
 }
 
-[data-theme="light"] body {
-  transition: background 0.3s;
-}
-
+[data-theme="light"] body,
 [data-theme="dark"] body {
   transition: background 0.3s;
 }
