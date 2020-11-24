@@ -7,10 +7,10 @@ export default function Intro() {
         <div className="avatar">
           <picture>
             <source
-              srcset="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
+              srcSet="/avatar_256.webp 1x, /avatar_384.webp 2x, /avatar_640.webp 3x"
               type="image/webp"
             />
-            <source srcset="/avatar.png" type="image/png" />
+            <source srcSet="/avatar.png" type="image/png" />
             <img
               alt="Drawing of Kerem Sevencan"
               src="/avatar_640.webp"

@@ -85,7 +85,9 @@ export default function Projects() {
 
             .card {
               background: var(--secondary-bg-color);
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+              box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 7px 25px 0 rgba(0, 0, 0, 0.03),
+                0px 4px 12px rgba(0, 0, 0, 0.05);
               border-radius: 16px 4px 4px 4px;
               margin-right: 2%;
               margin-bottom: 4%;
@@ -94,13 +96,7 @@ export default function Projects() {
               text-align: left;
               color: inherit;
               text-decoration: none;
-              transition: all 0.2s ease-in;
-              background-image: linear-gradient(
-                transparent 0px,
-                var(--yellow-color) 0px
-              );
-              background-position: 0 150px;
-              background-repeat: no-repeat;
+              transition: all 0.3s ease-out;
             }
 
             .card h3 {
@@ -113,12 +109,15 @@ export default function Projects() {
               font-size: 12px;
             }
 
-            .card:hover,
-            .card:focus,
+            .card:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 7px 25px 0 rgba(0, 0, 0, 0.03),
+                0px 4px 30px rgba(0, 0, 0, 0.1);
+            }
+
             .card:active {
-              transform: translateY(2px);
-              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
-              background-position: 0px 144px;
+              transform: translateY(4px);
             }
 
             @media (max-width: 1024px) {
