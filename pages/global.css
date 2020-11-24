@@ -10,7 +10,6 @@
     --heading-color: black;
     --primary-color: #62625c;
     --secondary-color: #808080;
-    --text-bg-color: #f7faf6;
     --secondary-text-bg-color: #f2f6f1;
     --yellow-color: #ebd55b;
     --bg-planet-bright: #ebd55b;
@@ -23,7 +22,6 @@
   --heading-color: black;
   --primary-color: #62625c;
   --secondary-color: #808080;
-  --text-bg-color: #f7faf6;
   --secondary-text-bg-color: #f2f6f1;
   --yellow-color: #ebd55b;
   --bg-planet-bright: #ebd55b;
@@ -36,7 +34,6 @@
     --heading-color: #b8b8b6;
     --primary-color: #6e6e6d;
     --secondary-color: #5c5c5b;
-    --text-bg-color: #13110b;
     --secondary-text-bg-color: #110f0a;
     --yellow-color: #433806;
     --bg-planet-bright: #d7d7d8;
@@ -49,7 +46,6 @@
   --heading-color: #b8b8b6;
   --primary-color: #6e6e6d;
   --secondary-color: #5c5c5b;
-  --text-bg-color: #13110b;
   --secondary-text-bg-color: #110f0a;
   --yellow-color: #433806;
   --bg-planet-bright: #d7d7d8;
@@ -58,6 +54,20 @@
 body {
   background: var(--bg-color);
   color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: 4px solid var(--bg-color);
+}
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
 }
 
 [data-theme="light"] body,

@@ -128,7 +128,7 @@ export default function Bio() {
         }
         .longtext {
           margin: 0 -2rem;
-          background: var(--text-bg-color);
+          background: var(--bg-color);
           border-radius: 1rem;
           color: var(--heading-color);
         }
