@@ -37,9 +37,9 @@ export default function Intro() {
           }
           description={
             <span>
-              a butterfly who is collecting colors to provide beautiful products
+              a butterfly who is collecting colors to provide beautiful experiences
               <br />
-              mostly after creating games and simple web apps.
+              mostly after creating games and simple web apps
             </span>
           }
         />

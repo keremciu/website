@@ -50,9 +50,9 @@ export default function Projects() {
         title="softography"
         description={
           <span>
-            a creation must follow its own path without the help of the creator.
+            a creation must follow its own path without the help of the creator
             <br />
-            making something that can help people is amazing.
+            making something that can help people always amazes me
           </span>
         }
       />

@@ -12,9 +12,9 @@ export default function Bio() {
             title="biography"
             description={
               <span>
-                playing with words or changing my look often helps me
+                playing with words, singing nonsense or changing my look often helps me
                 <br />
-                express my inner change to the mother earth.
+                express my inner change to the mother earth and earthlings
               </span>
             }
           />
@@ -51,7 +51,7 @@ export default function Bio() {
                       </p>
                       <p>
                         I created a website to share my knowledge about game
-                        patches, this was my first website. You can see it{" "}
+                        patches, this was my very first website. You can see it{" "}
                         <a
                           target="_blank"
                           rel="license noopener noreferrer"
@@ -68,7 +68,7 @@ export default function Bio() {
                   <strong className="tooltiptrigger">changed</strong>
                 </Tippy>{" "}
                 what I played. This universe has driven me to become a
-                self-taught developer who has a design spirit inside. I shared
+                self-taught developer who has a design spirit inside. I like to share
                 what I learn on my way.
               </p>
               <p>
@@ -90,7 +90,12 @@ export default function Bio() {
                       <p>
                         I was lucky to work on projects related to both frontend
                         and design. You can find many plugins/scripts on my
-                        GitHub.
+                        {" "}
+                        <a
+                          target="_blank"
+                          rel="license noopener noreferrer"
+                          href="https://github.com/keremciu/"
+                        >GitHub</a>.
                       </p>
                       <p>
                         My passion comes from communication. I love talking and
