@@ -18,7 +18,7 @@ export default function Hero({ label, title, description }) {
         }
         @media (max-width: 1024px) {
           .hero {
-            margin-left: 20px;
+            margin-left: 1rem;
           }
         }
       `}</style>

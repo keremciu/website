@@ -1,4 +1,5 @@
 :root {
+  font-size: calc(1rem + .2vw);
   --bg-planet-shadow: #828894;
   --bg-planet-lightshadow: #8d939d;
 }
@@ -140,7 +141,7 @@ h1, h4 {
 section {
   margin: 0 auto;
   width: 100%;
-  max-width: 1090px;
+  max-width: 60rem;
   padding: 8rem 0 4rem;
 }
 
@@ -181,11 +182,9 @@ h6 {
     ui-serif, serif;
 }
 
-html { font-size: calc(0.5em + 1vh) }
-
 @media (max-width: 767px) {
-  html {
-    font-size: 65%;
+  :root {
+    font-size: calc(0.6rem + .2vw);
   }
 }
 

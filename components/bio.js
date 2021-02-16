@@ -159,12 +159,15 @@ export default function Bio() {
           border-bottom-right-radius: 1rem;
           background: var(--secondary-text-bg-color);
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1000px) {
           .row {
             margin-left: 0px;
             flex-direction: column;
           }
-        }
+          .column {
+            padding: 1rem 2rem;
+          }
+        }      
       `}</style>
     </div>
   );

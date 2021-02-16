@@ -74,7 +74,7 @@ export default function Intro() {
         }
         @media (max-width: 1024px) {
           .avatar {
-            margin-left: 2rem;
+            margin-left: 1rem;
           }
         }
       `}</style>

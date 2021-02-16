@@ -108,8 +108,8 @@ export default function Projects() {
 
             .card p {
               margin: 8px 0 0;
-              font-size: 0.6rem;
-              height: 1.8rem;
+              font-size: 0.75rem;
+              height: 2.8rem;
             }
 
             .card:hover {
@@ -128,7 +128,7 @@ export default function Projects() {
               font-size: 0.525rem;
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1000px) {
               .grid {
                 margin-left: 2%;
               }
