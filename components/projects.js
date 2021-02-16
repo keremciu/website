@@ -136,17 +136,6 @@ export default function Projects() {
                 flex-basis: 48%;
               }
             }
-
-            @media (max-width: 600px) {
-              .grid {
-                width: 90%;
-                flex-direction: column;
-                margin-left: 5%;
-              }
-              .card {
-                min-width: 100%;
-              }
-            }
           `}
         </style>
       </div>
