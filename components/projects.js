@@ -124,6 +124,10 @@ export default function Projects() {
               transform: translateY(4px);
             }
 
+            .label {
+              font-size: 0.525rem;
+            }
+
             @media (max-width: 1024px) {
               .grid {
                 margin-left: 2%;
