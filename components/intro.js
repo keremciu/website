@@ -70,6 +70,7 @@ export default function Intro() {
           margin-bottom: 2rem;
           height: 11rem;
           cursor: pointer;
+          -webkit-tap-highlight-color: transparent;
         }
         .avatar img.top {
           position: absolute;
