@@ -66,7 +66,7 @@ export default function Intro() {
       <style jsx>{`
         .avatar {
           position: relative;
-          display: block;
+          display: inline-flex;
           margin-bottom: 2rem;
           height: 11rem;
           cursor: pointer;
