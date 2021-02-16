@@ -14,8 +14,7 @@ export default function Intro() {
             <img
               alt="Drawing of Kerem Sevencan"
               src="/avatar_640.webp"
-              width={190}
-              height={172}
+              style={{ width: '12rem', height: '10.7rem' }}
             />
           </picture>
         </div>
@@ -63,26 +62,19 @@ export default function Intro() {
         }
         .name-vector {
           position: absolute;
-          top: -10px;
-          left: 150px;
+          top: 0rem;
+          left: 10rem;
           z-index: -1;
           content: " ";
           display: block;
-          width: 140px;
-          height: 60px;
+          width: 9rem;
+          height: 4rem;
           fill: var(--yellow-color);
           opacity: 0.5;
         }
-        @media (max-width: 767px) {
-          .name-vector {
-            width: 90px;
-            top: -16px;
-            left: 100px;
-          }
-        }
         @media (max-width: 1024px) {
           .avatar {
-            margin-left: 20px;
+            margin-left: 2rem;
           }
         }
       `}</style>

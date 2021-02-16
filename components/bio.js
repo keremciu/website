@@ -132,7 +132,6 @@ export default function Bio() {
           padding: 0px 12px;
         }
         .longtext {
-          margin: 0 -2rem;
           background: var(--bg-color);
           border-radius: 1rem;
           color: var(--heading-color);
@@ -152,7 +151,7 @@ export default function Bio() {
         }
         .column {
           min-height: 100px;
-          max-width: 620px;
+          max-width: 37rem;
           padding: 3rem 4rem;
         }
         .column.second {
