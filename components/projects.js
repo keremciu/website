@@ -96,20 +96,24 @@ export default function Projects() {
               text-align: left;
               color: inherit;
               text-decoration: none;
-              transition: all 0.3s ease-out;
+              transition: transform 0.4s, box-shadow 0.2s;
+              border-bottom: 3px solid transparent;
             }
 
             .card h3 {
               color: var(--heading-color);
               margin: 8px 0 0;
+              font-size: 1rem;
             }
 
             .card p {
               margin: 8px 0 0;
-              font-size: 12px;
+              font-size: 0.75rem;
+              height: 2.8rem;
             }
 
             .card:hover {
+              border-bottom-color: var(--accent-color);
               transform: translateY(-3px);
               box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
                 0 7px 25px 0 rgba(0, 0, 0, 0.03),
@@ -120,7 +124,11 @@ export default function Projects() {
               transform: translateY(4px);
             }
 
-            @media (max-width: 1024px) {
+            .label {
+              font-size: 0.525rem;
+            }
+
+            @media (max-width: 1000px) {
               .grid {
                 margin-left: 2%;
               }

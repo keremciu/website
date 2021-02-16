@@ -1,4 +1,5 @@
 :root {
+  font-size: calc(1rem + .2vw);
   --bg-planet-shadow: #828894;
   --bg-planet-lightshadow: #8d939d;
 }
@@ -7,6 +8,8 @@
   html:not([data-theme="dark"]) {
     --bg-color: #f0f0eb;
     --secondary-bg-color: white;
+    --accent-color: #B2C9A9;
+    --ligt-accent-color: #F9FBF9;
     --heading-color: black;
     --primary-color: #62625c;
     --secondary-color: #808080;
@@ -19,6 +22,8 @@
 [data-theme="light"] {
   --bg-color: #f0f0eb;
   --secondary-bg-color: white;
+  --accent-color: #B2C9A9;
+  --ligt-accent-color: #F9FBF9;
   --heading-color: black;
   --primary-color: #62625c;
   --secondary-color: #808080;
@@ -31,6 +36,8 @@
   html:not([data-theme="light"]) {
     --bg-color: #13110b;
     --secondary-bg-color: black;
+    --accent-color: #5A6756;
+    --ligt-accent-color: #0C0E0C;
     --heading-color: #b8b8b6;
     --primary-color: #6e6e6d;
     --secondary-color: #5c5c5b;
@@ -43,6 +50,8 @@
 [data-theme="dark"] {
   --bg-color: #13110b;
   --secondary-bg-color: black;
+  --accent-color: #5A6756;
+  --ligt-accent-color: #0C0E0C;
   --heading-color: #b8b8b6;
   --primary-color: #6e6e6d;
   --secondary-color: #5c5c5b;
@@ -89,6 +98,12 @@ body {
   background: var(--bg-color);
 }
 
+[data-style="stats"].wrapper {
+  border-top: 10px solid var(--ligt-accent-color);
+  border-bottom: 10px solid var(--accent-color);
+  background: var(--secondary-bg-color);
+}
+
 .label {
   line-height: 1;
   border-radius: 1rem;
@@ -100,8 +115,12 @@ body {
   color: var(--secondary-color);
 }
 
-h1 {
+h1, h4 {
   color: var(--heading-color);
+}
+
+.container .tippy-box {
+  font-size: 0.8rem;
 }
 
 .textlink {
@@ -110,19 +129,19 @@ h1 {
   transition: all 0.2s ease-in;
   transition: background-position 80ms ease-out 0s;
   background-image: linear-gradient(transparent 0px, var(--yellow-color) 0px);
-  background-position: 0px 12px;
+  background-position: 0rem 0.8rem;
   background-repeat: no-repeat;
   text-decoration: none;
 }
 .textlink:hover {
   color: var(--heading-color);
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 section {
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+  max-width: 60rem;
   padding: 8rem 0 4rem;
 }
 
@@ -164,8 +183,8 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  html {
-    font-size: 65%;
+  :root {
+    font-size: calc(0.6rem + .2vw);
   }
 }
 

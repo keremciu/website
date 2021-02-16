@@ -104,17 +104,11 @@ export default function Switch() {
             }
             .elements svg {
               position: absolute;
-              width: 7px;
-              height: 7px;
+              width: 0.4rem;
+              height: 0.4rem;
               opacity: 1;
               transition: transform 400ms ease, opacity 200ms ease,
                 width 200ms ease, height 200ms ease;
-            }
-            @media (max-width: 600px) {
-              .elements svg {
-                width: 5px;
-                height: 5px;
-              }
             }
             .elements svg circle {
               fill: var(--bg-planet-bright);

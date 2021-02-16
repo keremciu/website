@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
-import { useEffect } from "react";
 
 import Switch from "../components/switch";
 import Intro from "../components/intro";
+import Stats from '../components/stats'
 
 const Bio = dynamic(() => import("../components/bio"));
 const Hero = dynamic(() => import("../components/hero"));
@@ -14,6 +14,7 @@ export default function Home() {
       <Switch />
       <Intro />
       <Bio />
+      <Stats />
       <Projects />
       <footer>
         <p className="cvlink">
