@@ -1,17 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 import Hero from "./hero";
 
-const hairList = ['', 'mohawk', 'gray', 'long']
+const hairList = ["", "mohawk", "gray", "long"];
 
 export default function Intro() {
-  const [reveal, setReveal] = useState(false)
-  const [hairStyle, setHairStyle] = useState('mohawk')
-  const filteredHairList = hairList.filter(style => style !== hairStyle)
+  const [reveal, setReveal] = useState(false);
+  const [hairStyle, setHairStyle] = useState("mohawk");
+  const filteredHairList = hairList.filter((style) => style !== hairStyle);
   const changeAvatar = () => {
-    setReveal(true)
-    setHairStyle(filteredHairList[Math.floor(Math.random() * filteredHairList.length)])
-  }
+    setReveal(true);
+    setHairStyle(
+      filteredHairList[Math.floor(Math.random() * filteredHairList.length)]
+    );
+  };
 
   return (
     <div className="container">
@@ -26,17 +28,17 @@ export default function Intro() {
             <img
               alt="Drawing of Kerem Sevencan"
               src="/avatar_828.webp"
-              style={{ width: '12rem', height: '10.7rem' }}
+              style={{ width: "12rem", height: "10.7rem" }}
             />
           </picture>
-          {hairStyle !== '' &&
+          {hairStyle !== "" && (
             <img
               alt={`${hairStyle} of Kerem`}
               src={`/${hairStyle}_hair.png`}
-              className={reveal ? 'bottom reveal' : 'bottom'}
+              className={reveal ? "bottom reveal" : "bottom"}
               onAnimationEnd={() => setReveal(false)}
             />
-          }
+          )}
         </div>
         <Hero
           label="DIGITAL EXPERIENCE DEVELOPER"
@@ -56,7 +58,8 @@ export default function Intro() {
           }
           description={
             <span>
-              a butterfly who is collecting colors to provide beautiful experiences
+              a butterfly who is collecting colors to provide beautiful
+              experiences
               <br />
               mostly after creating games and simple web apps
             </span>
@@ -88,6 +91,7 @@ export default function Intro() {
         .avatar img.bottom.reveal {
           animation-name: reveal;
           animation-duration: 0.8s;
+          animation-fill-mode: backwards;
           animation-timing-function: ease-in-out;
           transform: scale(1.2);
         }

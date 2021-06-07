@@ -115,8 +115,13 @@ body {
   color: var(--secondary-color);
 }
 
-h1, h4 {
+h1, h2, h3, h4 {
   color: var(--heading-color);
+}
+
+hr {
+  border-style: solid;
+  border-color: var(--secondary-text-bg-color);
 }
 
 .container .tippy-box {
@@ -157,6 +162,19 @@ section {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
 
 html,

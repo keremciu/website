@@ -1,6 +1,5 @@
 import Hero from "./hero";
 import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css";
 
 export default function Bio() {
   return (
@@ -12,7 +11,8 @@ export default function Bio() {
             title="biography"
             description={
               <span>
-                playing with words, singing nonsense or changing my look often helps me
+                playing with words, singing nonsense or changing my look often
+                helps me
                 <br />
                 express my inner change to the mother earth and earthlings
               </span>
@@ -35,6 +35,7 @@ export default function Bio() {
                 When I was little, my curiosity took me to the game universe. I
                 played games then{" "}
                 <Tippy
+                  theme="light"
                   content={
                     <div className="tooltipcontent">
                       <p>
@@ -68,8 +69,8 @@ export default function Bio() {
                   <strong className="tooltiptrigger">changed</strong>
                 </Tippy>{" "}
                 what I played. This universe has driven me to become a
-                self-taught developer who has a design spirit inside. I like to share
-                what I learn on my way.
+                self-taught developer who has a design spirit inside. I like to
+                share what I learn on my way.
               </p>
               <p>
                 Thanks to the internet and freelance web projects, I started
@@ -89,13 +90,15 @@ export default function Bio() {
                     <div className="tooltipcontent">
                       <p>
                         I was lucky to work on projects related to both frontend
-                        and design. You can find many plugins/scripts on my
-                        {" "}
+                        and design. You can find many plugins/scripts on my{" "}
                         <a
                           target="_blank"
                           rel="license noopener noreferrer"
                           href="https://github.com/keremciu/"
-                        >GitHub</a>.
+                        >
+                          GitHub
+                        </a>
+                        .
                       </p>
                       <p>
                         My passion comes from communication. I love talking and
@@ -137,7 +140,7 @@ export default function Bio() {
           color: var(--heading-color);
         }
         .longtext a {
-          color: white;
+          // color: white;
         }
         .longtext a:hover {
           text-decoration: none;
@@ -167,7 +170,7 @@ export default function Bio() {
           .column {
             padding: 1rem 2rem;
           }
-        }      
+        }
       `}</style>
     </div>
   );

@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 export default function Hero({ label, title, description }) {
   return (
     <div className="hero">
@@ -13,9 +11,6 @@ export default function Hero({ label, title, description }) {
           position: relative;
         }
 
-        .description {
-          font-weight: 500;
-        }
         @media (max-width: 1024px) {
           .hero {
             margin-left: 1rem;
