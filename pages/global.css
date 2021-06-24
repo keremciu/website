@@ -131,16 +131,11 @@ hr {
 .textlink {
   color: inherit;
   font-weight: 500;
-  transition: all 0.2s ease-in;
-  transition: background-position 80ms ease-out 0s;
-  background-image: linear-gradient(transparent 0px, var(--yellow-color) 0px);
-  background-position: 0rem 0.8rem;
-  background-repeat: no-repeat;
-  text-decoration: none;
+  transition: color 0.2s;
 }
 .textlink:hover {
   color: var(--heading-color);
-  background-position: 0 0;
+  text-decoration: none;
 }
 
 section {
@@ -187,6 +182,13 @@ body {
   line-height: 1.5715;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[href] {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: .125em!important;
 }
 
 h1,

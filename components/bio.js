@@ -86,6 +86,7 @@ export default function Bio() {
               <p style={{ width: "101%" }}>
                 Throughout my entire career, I've built many{" "}
                 <Tippy
+                  theme="light"
                   content={
                     <div className="tooltipcontent">
                       <p>
@@ -147,10 +148,11 @@ export default function Bio() {
         }
         .longtext .tooltiptrigger {
           font-weight: 600;
-          border-bottom: 1px solid var(--heading-color);
+          text-decoration-thickness: .125em!important;
+          text-decoration: underline;
         }
         .longtext .tooltiptrigger:hover {
-          border-bottom: 1px solid transparent;
+          text-decoration: none;
         }
         .column {
           min-height: 100px;

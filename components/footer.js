@@ -26,6 +26,7 @@ export default function Footer({ links }) {
                 theme="light"
                 content={<div className="tooltipcontent">{link.title}</div>}
                 interactive
+                offset={[0, 13]}
               >
                 <svg
                   width="36"
@@ -43,6 +44,8 @@ export default function Footer({ links }) {
             </a>
           ))}
         </div>
+        <p>© 2020 Kerem Sevencan. made in Berlin with love.</p>
+        <div style={{ fontSize: 24 }}>🦁</div>
       </footer>
 
       <style jsx>{`

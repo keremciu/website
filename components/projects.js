@@ -108,6 +108,7 @@ export default function Projects() {
 
             .card p {
               margin: 8px 0 0;
+              font-weight: 400;
               font-size: 0.75rem;
               height: 2.8rem;
             }
