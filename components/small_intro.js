@@ -10,7 +10,7 @@ export default function Intro({ title, date }) {
           label={<a href="/">JOURNAL OF KEREM SEVENCAN</a>}
           title={title}
           description={
-            <small>Last update on {new Date(date).toLocaleDateString()}. Had to be written.</small>
+            date && <small>Last update on {new Date(date).toLocaleDateString()}. Had to be written.</small>
           }
         />
       </section>
