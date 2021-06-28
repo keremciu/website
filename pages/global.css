@@ -118,7 +118,11 @@ body {
 .label a {
   font-weight: 700;
 }
-
+@media (max-width: 1000px) {
+  body [data-tippy-root] {
+    max-width: calc(100vw - 100px);
+  }
+}
 h1, h2, h3, h4 {
   color: var(--heading-color);
 }

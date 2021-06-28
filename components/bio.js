@@ -38,6 +38,7 @@ export default function Bio() {
                   theme="light"
                   content={
                     <div className="tooltipcontent">
+                      <h3>Game patches</h3>
                       <p>
                         my first digital creations were game patches for a
                         soccer game called FIFA. You can see one of them{" "}
@@ -50,6 +51,7 @@ export default function Bio() {
                         </a>{" "}
                         from 2007.
                       </p>
+                      <hr />
                       <p>
                         I created a website to share my knowledge about game
                         patches, this was my very first website. You can see it{" "}
@@ -89,6 +91,7 @@ export default function Bio() {
                   theme="light"
                   content={
                     <div className="tooltipcontent">
+                      <h3>Time savers</h3>
                       <p>
                         I was lucky to work on projects related to both frontend
                         and design. You can find many plugins/scripts on my{" "}
@@ -101,6 +104,7 @@ export default function Bio() {
                         </a>
                         .
                       </p>
+                      <hr />
                       <p>
                         My passion comes from communication. I love talking and
                         underlying how we'd like to work together then it's easy
@@ -133,7 +137,7 @@ export default function Bio() {
           margin: 0 auto 4rem;
         }
         .tooltipcontent {
-          padding: 0px 12px;
+          padding: 4px 18px 10px;
         }
         .longtext {
           background: var(--bg-color);
@@ -171,6 +175,10 @@ export default function Bio() {
           }
           .column {
             padding: 1rem 2rem;
+          }
+          .tooltipcontent {
+            font-size: 11px;
+            padding: 0px 6px 2px;
           }
         }
       `}</style>
